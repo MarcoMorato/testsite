@@ -214,10 +214,7 @@ CKEDITOR_CONFIGS = {
         ]),
     }
 }
-if DEBUG:
-    import mimetypes
 
-    mimetypes.add_type("application/javascript", ".js", True)
 
 
 CAPTCHA_LETTER_ROTATION = None
@@ -233,3 +230,8 @@ CACHES = {
         }
     }
 }
+
+if DEBUG:
+    import mimetypes
+
+    mimetypes.add_type("application/javascript", ".js", True)
