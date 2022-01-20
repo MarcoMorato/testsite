@@ -9,6 +9,3 @@ def test(request):
 def get_rubric(request):
     pass
 
-
-def listdrop(request):
-    return render(request, 'testapp/listdrop.html', {'rubrics': Rubric.objects.all()})
